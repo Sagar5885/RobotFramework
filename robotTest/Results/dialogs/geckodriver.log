@@ -1,0 +1,9 @@
+1548798708813	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/2h/q29t2r0n50n9zrk7nmtql298_2w978/T/rust_mozprofile.IDfCu6ZaM8Rn"
+1548798709338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1548798709339	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+Can't find symbol 'GetGraphicsResetStatus'.
+1548798710755	Marionette	INFO	Listening on port 64388
+1548798710776	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: uncaught exception: ecomm_pagetype value must be one of the allowed values
+JavaScript error: , line 0: uncaught exception: ecomm_pagetype value must be one of the allowed values
+1548798748215	Marionette	INFO	Stopped listening on port 64388
