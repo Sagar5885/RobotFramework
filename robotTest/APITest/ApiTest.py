@@ -29,17 +29,9 @@ assert response.status_code == 200
 response_json = json.loads(response.text)
 print(response_json)
 
-# print(response_json["payload"]["promiseList"][0]["id"])
-# print(response_json["payload"]["promiseList"][0]["promiseDetails"]["shippingSLATier"])
-# print(response_json["payload"]["promiseList"][0]["promiseDetails"]["fulfillmentOption"])
-# print(response_json["payload"]["promiseList"][0]["promiseDetails"]["addressGroup"][0]["slaGroup"][0]["deliveryDates"]["promiseLines"][0]["isRapidResponse"])
-# print(response_json["payload"]["promiseList"][0]["promiseDetails"]["addressGroup"][0]["slaGroup"][0]["deliveryDates"]["promiseLines"][0]["lineId"])
-
 assert response_json["payload"]["promiseList"][0]["id"] == '150'
-assert response_json["payload"]["promiseList"][0]["promiseDetails"]["shippingSLATier"] == 'TWO_DAY'
-assert response_json["payload"]["promiseList"][0]["promiseDetails"]["fulfillmentOption"] == 'S2H'
-assert response_json["payload"]["promiseList"][0]["promiseDetails"]["addressGroup"][0]["slaGroup"][0]["deliveryDates"]["promiseLines"][0]["isRapidResponse"] == False
-assert response_json["payload"]["promiseList"][0]["promiseDetails"]["addressGroup"][0]["slaGroup"][0]["deliveryDates"]["promiseLines"][0]["lineId"] == '1_s2hsigleitemlineid001'
+assert response_json["payload"]["promiseList"][0]["promiseDetails"]["value1"] == 'Value1'
+assert response_json["payload"]["promiseList"][0]["promiseDetails"]["value2"] == 'Value2'
 
 # result = parse('$[?(@.name=="' + "payload" + '")]').find(response_json)
 # #.properties[?(@.name=="' + "promiseList" + '")]
